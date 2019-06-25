@@ -1,4 +1,5 @@
-git diff -------------------------------------------------------------------------------
+inspecionar diferenças
+-------------------------------------------------------------------------------
 
 git diff
 	- Exibe todas as diferenças entre sua cópia local e o índice sincronizado;
@@ -8,3 +9,55 @@ git diff --cached
 
 git diff HEAD
 	- Exibe todas as diferenças entre sua cópia local e o último commit realizado;
+
+
+
+
+
+exibir históricos de commit
+-------------------------------------------------------------------------------
+
+git log
+	- Exibe o histórico de todos os commits da branch corrent
+
+git log --all
+	- Exibe o histórico de todos os commits de todas as branchs
+
+git log --author=<pattern>
+	- Exibe o histórico de todos os commits filtrando por autor
+
+git log --merge
+	- Exibe o histórico de todos os commits de merge
+
+git log --pretty=oneline
+	- Exibe o histórico em uma linha cada commit
+
+
+
+mostrar autores dos commits
+-------------------------------------------------------------------------------
+
+git blame your-file-name
+	- mostra histórico de commits e seus respectivos autores
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
