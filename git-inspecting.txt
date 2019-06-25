@@ -1,4 +1,4 @@
-inspecionar diferenças
+Inspecionar diferenças
 -------------------------------------------------------------------------------
 
 git diff
@@ -41,11 +41,19 @@ git blame your-file-name
 
 
 
-Exiber commits perdidos
+Exibir commits perdidos
 -------------------------------------------------------------------------------
 
 git reflog
 	- Mostra lista de todos os commits, mesmo os que foram resetados
+
+
+
+Exibir todos os arquivos
+-------------------------------------------------------------------------------
+
+git ls-files
+	- Lista todos os arquivos do repositório
 
 
 
