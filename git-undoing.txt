@@ -29,8 +29,14 @@ git commit --amend -m "Edited message"
 	- Permite adicionar novas alterações no último commit com uma nova mensagem
 
 
-Desfazendo/Alterando stage area
+Desfazendo/Alterando working are and stage area
 -------------------------------------------------------------------------------
+
+git checkout file-name-here
+	- Remove as alterações do arquivo especificado que ainda não foram adicionadas ao stage
+
+git checkout HEAD file-name-here
+	- Remove do stage e do working area
 
 git reset
 	- Remove as alterações adicinadas no stage e q não foram commitadas
