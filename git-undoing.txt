@@ -1,2 +1,26 @@
 Desfazendo commit
 -------------------------------------------------------------------------------
+
+git reset commit-id-here
+	- Reseta para um commit específico. *Deleta os posteriores
+
+git reset HEAD~1
+	- Retorna para um commit anterior ao atual. *Retorna 1 a cada execução.
+
+git reset --hard HEAD~1
+	- Retorna para um commit anterior ao atual e remove do stage. *Retorna 1 a cada execução.
+
+git checkout commit-id-here
+	- Cria e vai para uma branch com o estado do commit especificado
+
+git checkout HEAD~1
+	- Retorna ao estado anterior do commit atual numa nova branch. *Retorna 1 a cada execução.
+
+git reflog
+	- Lista todas as branchs, inclusive as geradas por git checkout HEAD~1
+
+git revert commit-id-here
+	- Reverte as alterações do commit especificado
+
+git commit --amend
+	- Permite adicionar novas alterações no último commit
