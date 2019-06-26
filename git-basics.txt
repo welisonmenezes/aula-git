@@ -51,6 +51,26 @@ git commit -m "your message here"
 
 
 
+Criando e navegando entre as branchs
+-------------------------------------------------------------------------------
+
+git checkout -b branch-name-here
+	- Cria uma branch nova e muda para ela ao mesmo tempo
+
+git branch branch-name-here
+	- Cria uma branch nova
+
+git checkout branch-name-here
+	- Muda para a branch especificada
+
+git branch -d branch-name-here
+	- Deleta a branch especificada
+
+git merge branch-name-here
+	- Mescla as atualizações da branch especificada com a branch corrent
+
+
+
 Adicionando um repositório remoto
 -------------------------------------------------------------------------------
 
@@ -91,10 +111,24 @@ git pull remote-name-here remote-branch-here
 		git fetch + git merge
 
 git merge --abort
-	- Caso dê conflito, desfaz o merge
+	- Caso dê conflito, desfaz o merge se necessário
 
 
 
+Enviando atualizações do local para o remoto
+-------------------------------------------------------------------------------
+
+git push --all
+	- Envia as atualizações de todos os branchs para o remoto
+
+git push remote-name-here branch-name-here
+	- Envia as atualiações da branch corrente para o remoto especificado
+
+git push -u remote-name-here branch-name-here
+	- -u envia as atualizações e atualiza/cria o upstream, ou seja,
+		mapeia a branch local com a branch remota especificada
+
+* É boa prática fazer um git pull antes de codar e antes de fazer git push
 
 
 
