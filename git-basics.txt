@@ -1,0 +1,115 @@
+Criando repositório
+-------------------------------------------------------------------------------
+
+git init
+	- Inicializa um repositório git
+
+git clone repo-url
+	- Clona um repositório existente
+
+git clone repo-url folder-name
+	- Clona um repositório existente dentro da pasta especificada
+
+
+* Se você usou init não use clone, se usou clone não use init
+
+
+
+Checando se existe alterações
+-------------------------------------------------------------------------------
+
+git status
+	- Lista itens que precisam ser adicionados e/ou commitados
+
+
+
+Adiciona mudanças ao stage
+-------------------------------------------------------------------------------
+
+git add file-name
+	- Adiciona um arquivo específico ao stage
+
+git add -A 
+	- Adiciona todas as mudanças
+
+git add .
+	- Adiciona todas as mudanças
+
+git add -u
+	- Adiciona mudanças e deleções apenas
+
+
+
+Commita os arquivos no stage
+-------------------------------------------------------------------------------
+
+git commit
+	- Commita os arquivos do stage e abre editor para o put da mensagem
+
+git commit -m "your message here"
+	- Commita os arquivos do stage diretamente
+
+
+
+Adicionando um repositório remoto
+-------------------------------------------------------------------------------
+
+git remote
+	- Lista seus repositórios remotos 
+
+git remote -v
+	- Lista seus repositórios remotos com suas respectivas urls
+
+git remote add alias-here url-here
+	- Adicionar um repositório remoto ao seu repositório local
+
+
+* Caso você clonou algum repositório do github, o mesmo herdará os seus repositórios remotos
+
+
+
+Baixando e aplicando atualizações do remoto
+-------------------------------------------------------------------------------
+
+git fetch remote-name-here remote-branch-here
+	- Baixa as alterações do branch remoto, mas não aplica ao branch local
+
+git fetch --all
+	- Baixa as alterações de todos os branchs remotos, mas não as aplicam aos branchs locais
+
+git remote update
+	- Equivale ao git fetch --all
+
+git merge FETCH_HEAD
+	- Aplica as alterações recuperadas pelo git fetch ao branch local
+
+git merge remote-name-here\branch-name-here
+	- Aplica as alterações recuperadas por git fetch ao branch local
+
+git pull remote-name-here remote-branch-here
+	- Baixa as alterações do branch remoto e aplica ao branch local, equivale à:
+		git fetch + git merge
+
+git merge --abort
+	- Caso dê conflito, desfaz o merge
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
