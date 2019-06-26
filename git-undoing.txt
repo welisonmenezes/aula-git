@@ -20,7 +20,10 @@ git reflog
 	- Lista todas as branchs, inclusive as geradas por git checkout HEAD~1
 
 git revert commit-id-here
-	- Reverte as alterações do commit especificado
+	- Reverte as alterações do commit especificado. *Cria um novo commit
 
 git commit --amend
 	- Permite adicionar novas alterações no último commit
+
+git commit --amend -m "Edited message"
+	- Permite adicionar novas alterações no último commit com uma nova mensagem
