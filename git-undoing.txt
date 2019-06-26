@@ -1,4 +1,4 @@
-Desfazendo commit
+Desfazendo/Alterando commit
 -------------------------------------------------------------------------------
 
 git reset commit-id-here
@@ -27,3 +27,16 @@ git commit --amend
 
 git commit --amend -m "Edited message"
 	- Permite adicionar novas alterações no último commit com uma nova mensagem
+
+
+Desfazendo/Alterando stage area
+-------------------------------------------------------------------------------
+
+git reset
+	- Remove as alterações adicinadas no stage e q não foram commitadas
+
+git reset --hard
+	- Remove as alterações adicinadas no stage e também da área de trabalho
+
+
+
