@@ -1,0 +1,55 @@
+Criar e navegar entre as branchs
+-------------------------------------------------------------------------------
+
+git checkout -b branch-name-here
+	- Cria uma branch nova e muda para ela ao mesmo tempo
+
+git branch branch-name-here
+	- Cria uma branch nova
+
+git checkout branch-name-here
+	- Muda para a branch especificada
+
+
+
+Editar e deletar uma branch
+-------------------------------------------------------------------------------
+
+git branch -m new-name-here
+	- Altera o nome da branch corrente
+
+git branch -m old-name-here new-name-here
+	- Altera o nome de uma dada branch
+
+git branch -d branch-name-here
+	- Deleta a branch especificada
+
+git push origin :old-name-here new-name-here
+	- Deleta a branch antiga e cria uma nova no repositório remoto
+	  *Importante criar a branch localmente antes
+
+
+git push remote-name-here --delete branch-name-here
+	- Deleta uma branch do repositório remoto
+
+git push remote-name-here :branch-name-here
+	- Equivalente ao comando de cima
+
+
+
+Mesclar branchs
+-------------------------------------------------------------------------------
+
+git merge branch-name-here
+	- Mescla a dada branch com a branch corrente
+	  *Não altera o histórico e cria um novo commit com o merge
+
+git merge --squash branch-name-here
+	- Mescla as alterações da dada branch com a branch corrente num novo commit a ser feito
+	  *Pode alterar o histórico
+
+
+git rebase branch-name-here
+	- Unifica as ramificações. *Pode alterar o histórico
+
+
