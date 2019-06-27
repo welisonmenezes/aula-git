@@ -10,6 +10,12 @@ git branch branch-name-here
 git checkout branch-name-here
 	- Muda para a branch especificada
 
+git branch
+	- Lista todas as branchs do repositório local
+
+git branch -a
+	- Lista todas as branchs, local e remoto
+
 
 
 Editar e deletar uma branch
