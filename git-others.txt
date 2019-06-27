@@ -1,0 +1,23 @@
+CRUD tags
+-------------------------------------------------------------------------------
+
+git tag -a tag-name-here -m 'message tag here'
+	- Cria uma tag nova no commit corrent. -a cria a tag anotada
+
+git tag tag-name-here -m 'message tag here'
+	- Cria uma tag não anotada no commit corrent.
+
+git tag -a tag-name-here commit-id-here
+	- Cria uma tag para um dado commit
+
+git tag
+	- Lista todas as tags
+
+git show tag-name-here
+	- Mostra detalhes da tag especificada
+
+git push remote-name-here tag-name-here
+	- Publica a tag no repositório remoto
+
+git push remote-name-here --tags
+	- Publica todas as tags no repositório remoto
