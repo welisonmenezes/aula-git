@@ -21,3 +21,33 @@ git push remote-name-here tag-name-here
 
 git push remote-name-here --tags
 	- Publica todas as tags no repositório remoto
+
+git tag --delete tag-name-here
+	- Deleta uma dada tag do repositório
+
+git push --delete remote-name-here tag-name-here
+	- Deleta uma dada tag do repositório remoto
+
+git push remote-name-here :tag-name-here
+	- Equivalente ao comando acima
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
