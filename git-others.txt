@@ -30,10 +30,34 @@ git push --delete remote-name-here tag-name-here
 
 git push remote-name-here :tag-name-here
 	- Equivalente ao comando acima
+
+
+
+
+
+CRUD stash
+-------------------------------------------------------------------------------
 	
+git stash
+	- Tira o estado sujo do seu diretório de trabalho e o salva uma pilha de pendências
 
+git stash list
+	- Lista suas pilhas de pendências existentes
 
+git stash apply
+	- Aplica a pilha de pendências na branch corrente. Irá aplicar o stash mais recente
 
+git stash apply stash-name-here
+	- Aplica o dado stash à branch corrente
+
+git stash pop
+	- Aplica a pilha de pendências na branch corrente e em seguida o deleta
+
+git stash drop stash-name-here
+	- Deleta o dado stash
+
+git stash branch branch-name-here
+	- Recupera um stash e cria uma branch a partir dela
 
 
 
