@@ -41,6 +41,9 @@ CRUD stash
 git stash
 	- Tira o estado sujo do seu diretório de trabalho e o salva uma pilha de pendências
 
+git stash save "Your message here"
+	- Cria um stash com uma mensagem amigável
+
 git stash list
 	- Lista suas pilhas de pendências existentes
 
